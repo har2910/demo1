@@ -24,9 +24,12 @@ import java.util.*;
 	aliasName = "${lambdas_alias_name}",
 	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
-@EnvironmentVariables(value = {
-		@EnvironmentVariable(key = "target_table", value = "Events")
-})
+//@EnvironmentVariables(value = {
+//		@EnvironmentVariable(key = "target_table", value = "Events")
+//})
+//private final String tableName = "Events";
+
+
 class EventRequest {
 	public int principalId;
 	public Map<String, String> content;
@@ -46,11 +49,16 @@ public class ApiHandler implements RequestHandler<EventRequest, EventResponse> {
 
 	private final AmazonDynamoDB client = AmazonDynamoDBClientBuilder.defaultClient();
 	private final DynamoDB dynamoDB = new DynamoDB(client);
-	private final String tableName = System.getenv("target_table");
+//	private final String tableName = System.getenv("target_table");
+private final String tableName = "Events";
+
 
 	@Override
 	public EventResponse handleRequest(EventRequest request, Context context) {
-		// Generate unique ID and created timestamp
+		// Log environment variable to verify it
+		context.getLogger().log("Target Table: " + tableName);
+
+		// Generate unique ID and timestamp in ISO 8601 format
 		String eventId = UUID.randomUUID().toString();
 		String createdAt = DateTimeFormatter.ISO_INSTANT.format(Instant.now());
 
@@ -76,9 +84,11 @@ public class ApiHandler implements RequestHandler<EventRequest, EventResponse> {
 		}
 
 		// Return response with status code and created event details
+		context.getLogger().log("Item successfully saved to DynamoDB with ID: " + eventId);
 		return new EventResponse(201, itemMap);
 	}
 }
+
 
 //@EnvironmentVariables(value = {
 //		@EnvironmentVariable(key = "target_table", value = "${target_table}")
