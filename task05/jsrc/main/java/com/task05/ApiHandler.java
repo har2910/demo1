@@ -30,20 +30,6 @@ import java.util.*;
 //private final String tableName = "Events";
 
 
-class EventRequest {
-	public int principalId;
-	public Map<String, String> content;
-}
-
-class EventResponse {
-	public int statusCode;
-	public Map<String, Object> event;
-
-	public EventResponse(int statusCode, Map<String, Object> event) {
-		this.statusCode = statusCode;
-		this.event = event;
-	}
-}
 
 public class ApiHandler implements RequestHandler<EventRequest, EventResponse> {
 
@@ -88,6 +74,7 @@ private final String tableName = "Events";
 		return new EventResponse(201, itemMap);
 	}
 }
+
 
 
 //@EnvironmentVariables(value = {

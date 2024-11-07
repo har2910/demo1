@@ -3,7 +3,7 @@
     "name" : "api_handler",
     "lambda_path" : "C:\\Users\\harshil_kothari\\Desktop\\AWS prac\\demo1\\task05",
     "version" : "1.0.0",
-    "func_name" : "com.task05.EventRequest",
+    "func_name" : "com.task05.ApiHandler",
     "deployment_package" : "task05-1.0.0.jar",
     "resource_type" : "lambda",
     "runtime" : "java11",
