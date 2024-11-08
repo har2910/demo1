@@ -146,6 +146,7 @@ import java.util.UUID;
 @LambdaHandler(lambdaName = "api_handler",
 		roleName = "api_handler-role",
 		isPublishVersion = true,
+		aliasName = "learn",
 		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
 @EnvironmentVariables(value = {
