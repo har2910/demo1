@@ -20,6 +20,7 @@ import java.io.IOException;
 @LambdaHandler(lambdaName = "api_handler",
 		roleName = "api_handler-role",
 		layers = "sdk-layer",
+		aliasName = "learn",
 		runtime = DeploymentRuntime.JAVA11,
 		architecture = Architecture.ARM64,
 		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
