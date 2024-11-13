@@ -16,7 +16,6 @@
     "dependencies" : [ ],
     "event_sources" : [ ],
     "env_variables" : { },
-    "tags" : { },
     "publish_version" : false,
     "alias" : "learn",
     "layers" : [ "sdk-layer" ],
