@@ -10,7 +10,7 @@
 
     <properties>
         <maven-shade-plugin.version>3.5.2</maven-shade-plugin.version>
-        <syndicate.java.plugin.version>1.14.0</syndicate.java.plugin.version>
+        <syndicate.java.plugin.version>1.11.1</syndicate.java.plugin.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,22 +25,38 @@
             <artifactId>aws-lambda-java-core</artifactId>
             <version>1.2.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-lambda-java-events</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.epam.openapi</groupId>
+            <artifactId>open-meteo-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/open-meteo-api-1.0-SNAPSHOT.jar</systemPath>
+<!--            <systemPath>${basedir}/lib/open-</systemPath>-->
+        </dependency>
+
         <!--Syndicate annotations-->
         <dependency>
             <groupId>net.sf.aws-syndicate</groupId>
             <artifactId>deployment-configuration-annotations</artifactId>
             <version>${syndicate.java.plugin.version}</version>
         </dependency>
-
-        <!-- Open Meteo API -->
-        <dependency>
-            <groupId>com.open_meteo</groupId>
-            <artifactId>open_meteo_api</artifactId>
-            <version>1.0.1</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/open-meteo-1.0.1.jar</systemPath>
-        </dependency>
     </dependencies>
+
 
     <build>
         <sourceDirectory>${src.dir}</sourceDirectory>

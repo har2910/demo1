@@ -7,7 +7,7 @@
     "deployment_package" : "task08-1.0.0.jar",
     "resource_type" : "lambda",
     "runtime" : "java11",
-    "architectures" : [ "x86_64" ],
+    "architectures" : [ "arm64" ],
     "iam_role_name" : "api_handler-role",
     "memory" : 1024,
     "timeout" : 300,
@@ -16,10 +16,8 @@
     "dependencies" : [ ],
     "event_sources" : [ ],
     "env_variables" : { },
-    "tags" : { },
     "publish_version" : false,
-    "alias" : "${lambdas_alias_name}",
-    "layers" : [ "api-layer" ],
+    "layers" : [ "sdk-layer" ],
     "logs_expiration" : "${logs_expiration}",
     "snap_start" : "None",
     "url_config" : {
@@ -27,12 +25,12 @@
       "invoke_mode" : "BUFFERED"
     }
   },
-  "api-layer" : {
-    "name" : "api-layer",
-    "runtimes" : [ "java17" ],
+  "sdk-layer" : {
+    "name" : "sdk-layer",
+    "runtimes" : [ "java11" ],
     "resource_type" : "lambda_layer",
-    "deployment_package" : "api-layer-assembly.zip",
-    "libraries" : [ "lib/open-meteo-1.0.1.jar" ],
+    "deployment_package" : "sdk-layer-assembly.zip",
+    "libraries" : [ "lib/open-meteo-api-1.0-SNAPSHOT.jar" ],
     "architectures" : [ "arm64" ]
   }
 }
