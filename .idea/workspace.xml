@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8c7962b-6080-45ea-8585-91beee4a2432" name="Changes" comment="task updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f8c7962b-6080-45ea-8585-91beee4a2432" name="Changes" comment="task11">
+      <change beforePath="$PROJECT_DIR$/task11/export/l00bxekg93_oas_v3.json" beforeDir="false" afterPath="$PROJECT_DIR$/task11/export/l00bxekg93_oas_v3.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731660177194</updated>
       <workItem from="1731660178883" duration="220000" />
-      <workItem from="1731660423576" duration="3878000" />
+      <workItem from="1731660423576" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="task updated">
       <option name="closed" value="true" />
@@ -77,7 +77,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731660527757</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="task11">
+      <option name="closed" value="true" />
+      <created>1731670049663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731670049663</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="task updated" />
+    <MESSAGE value="task11" />
+    <option name="LAST_COMMIT_MESSAGE" value="task11" />
   </component>
 </project>
