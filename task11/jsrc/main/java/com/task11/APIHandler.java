@@ -23,6 +23,7 @@ import java.util.*;
 
 @LambdaHandler(lambdaName = "api_handler",
 		roleName = "api_handler-role",
+		aliasName = "learn",
 		runtime = DeploymentRuntime.JAVA17,
 		logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )

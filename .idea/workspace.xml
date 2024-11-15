@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8c7962b-6080-45ea-8585-91beee4a2432" name="Changes" comment="task11">
-      <change beforePath="$PROJECT_DIR$/task11/export/l00bxekg93_oas_v3.json" beforeDir="false" afterPath="$PROJECT_DIR$/task11/export/l00bxekg93_oas_v3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731660177194</updated>
       <workItem from="1731660178883" duration="220000" />
-      <workItem from="1731660423576" duration="4513000" />
+      <workItem from="1731660423576" duration="5510000" />
     </task>
     <task id="LOCAL-00001" summary="task updated">
       <option name="closed" value="true" />
@@ -85,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731670049663</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task11">
+      <option name="closed" value="true" />
+      <created>1731670784111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731670784111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
